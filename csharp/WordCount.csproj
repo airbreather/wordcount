@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+    <RestoreSources>$(RestoreSources);https://dotnetfeed.blob.core.windows.net/dotnet-experimental/index.json</RestoreSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Experimental.Collections" Version="1.0.7-alpha.20106.6" />
+    <PackageReference Include="Pipelines.Sockets.Unofficial" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>

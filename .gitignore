@@ -19,7 +19,6 @@ clojure.jar
 # all the compile binaries
 cpp/wordcount
 cpp/wordcount_baseline
-csharp/WordCountList.exe
 d/wordcount
 go/bin/
 haskell/WordCount

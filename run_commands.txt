@@ -3,6 +3,7 @@ c/wordcount
 cpp/wordcount
 cpp/wordcount_clang
 cpp/wordcount_baseline
+dotnet run --project csharp/WordCount.sln -c release
 d/wordcount
 elixir/wordcount
 go/bin/wordcount

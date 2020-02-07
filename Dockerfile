@@ -96,6 +96,13 @@ RUN apt-get update \
 RUN wget https://oss.sonatype.org/content/repositories/snapshots/org/clojure/clojure/1.9.0-master-SNAPSHOT/clojure-1.9.0-master-20160119.195127-1.jar -O /usr/lib/clojure.jar \
     && chmod a+rx /usr/lib/clojure.jar
 
+# .NET Core
+RUN wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb \
+    && dpkg -i packages-microsoft-prod.deb \
+    && apt-get install -y --no-install-recommends --allow-unauthenticated apt-transport-https \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends --allow-unauthenticated dotnet-sdk-3.1
+
 # Build tooling & updates
 RUN apt-get update \
   && apt-get install -y make bzip2 xz-utils\
